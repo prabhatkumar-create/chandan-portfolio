@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandan udas dash - MERN Stack Developer </title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ================== Navbar ================== -->
+    <nav id="navbar">
+        <a href="#" class="logo">
+            <img src="/assets/images/myportfolio.png" alt="My Portfolio Logo" class="logo-img">
+        </a>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <div class="nav-links" id="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/assets/pages/about.html">About</a>
+            <a href="/assets/pages/project.html">Project</a>
+            <a href="/assets/pages/skills.html">Skills</a>
+            <a href="/assets/pages/contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="py-5 mt-5" style="background: linear-gradient(135deg, #0f172a, #1e293b);">
+        <div class="container">
+
+            <!-- Title -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-white">Contact Us</h2>
+                <div class="border-bottom border-info mx-auto" style="width:80px;"></div>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Left Side -->
+                <div class="col-lg-5">
+                    <div class="p-4 rounded-4 shadow-lg text-white"
+                        style="background:rgba(255,255,255,0.05); backdrop-filter:blur(6px); border:1px solid rgba(255,255,255,0.1);">
+
+                        <h4 class="fw-bold mb-3">📬 Address / Postal Details</h4>
+                        <p><i class="bi bi-geo-alt-fill text-info"></i> Village / Locality: Nuasasan</p>
+                        <p><i class="bi bi-geo-fill text-info"></i> Post Office: Badachana B.O</p>
+                        <p><i class="bi bi-mailbox2 text-info"></i> PIN Code: 754296</p>
+                        <p><i class="bi bi-building text-info"></i> Taluk / Sub-district: Darpan</p>
+                        <p><i class="bi bi-flag-fill text-info"></i> District: Jajapur, Odisha</p>
+
+                        <h4 class="fw-bold mt-4 mb-3">📞 Contact Information</h4>
+                        <p><i class="bi bi-telephone-fill text-info"></i> Phone: 8338092612</p>
+                        <p><i class="bi bi-headset text-info"></i> Email: sdash9692@gmail.com</p>
+
+                        <h4 class="fw-bold mt-4 mb-3">🌐 Connect with Me</h4>
+                        <p class="mb-1">
+                            <a  href="https://www.linkedin.com/in/%C3%A7h%C3%A3nd%C3%A1n-%C3%B9-das-d%C3%A3sh-5a8062329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="text-info text-decoration-none"><i class="bi bi-linkedin"></i>
+                                LinkedIn</a>
+                        </p>
+                        <p class="mb-1">
+                            <a href="https://github.com/amchandan" class="text-info text-decoration-none"><i class="bi bi-github"></i> GitHub</a>
+                        </p>
+                        <p style="visibility: hidden;">
+                            <a href="#" class="text-info text-decoration-none"><i class="bi bi-twitter"></i> Twitter</a>
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="col-lg-7">
+                    <div class="p-4 rounded-4 shadow-lg text-white"
+                        style="background:rgba(255,255,255,0.05); backdrop-filter:blur(6px); border:1px solid rgba(255,255,255,0.1);">
+
+                        <h4 class="fw-bold mb-3">📩 Get in Touch</h4>
+
+                        <!-- Success Message -->
+                        <div id="successMessage" class="alert alert-success d-none">
+                            ✅ message sent successfully!
+                        </div>
+
+                        <form id="contactForm" novalidate>
+
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control bg-dark text-white border-secondary" id="name"
+                                    placeholder="Your Name">
+                                <small class="text-danger d-none" id="nameError">Full name is required.</small>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control bg-dark text-white border-secondary" id="email"
+                                    placeholder="name@example.com">
+                                <small class="text-danger d-none" id="emailError">Enter a valid email address.</small>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-select bg-dark text-white border-secondary" id="subject">
+                                    <option value="" selected>Select Subject</option>
+                                    <option value="project">Project Inquiry</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <small class="text-danger d-none" id="subjectError">Please select a subject.</small>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control bg-dark text-white border-secondary" id="message" rows="5"
+                                    placeholder="Write your message here..."></textarea>
+                                <small class="text-danger d-none" id="messageError">Message cannot be empty.</small>
+                            </div>
+
+                            <button type="submit" class="btn btn-info text-white px-4 py-2 rounded-pill">
+                                Send Message
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Full-page map -->
+    <!-- Full-page map for Nuasasan, Jajapur, Odisha -->
+    <section class="full-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.123456789!2d86.249876!3d20.819876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1964c6e5f7a123%3A0xabcdef1234567890!2sNuasasan%2C%20Jajapur%2C%20Odisha!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <!-- ================= MODERN FOOTER WITH GRID ================= -->
+    <footer class="text-light py-5" style="background-color:#041124;">
+        <div class="container">
+
+            <!-- Grid Layout for Footer Blocks -->
+            <div class="row text-center text-md-start mb-4">
+
+                <!-- About Me -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 style="color:#fff;">About Me</h5>
+                    <p style="color:#e0e0e0;">
+                        I’m Chandan u das Dash, a passionate web developer building modern, responsive, and interactive
+                        web applications. Connect with me via social media or email!
+                    </p>
+                </div>
+
+                <!-- Navbar Menu -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 style="color:#fff;">Quick Links</h5>
+                    <ul class="list-unstyled" style="line-height:2;">
+                        <li><a href="/index.html" class="text-light" style="text-decoration:none;">Home</a></li>
+                        <li><a href="/assets/pages/about.html" class="text-light" style="text-decoration:none;">About</a></li>
+                        <li><a href="/assets/pages/project.html" class="text-light" style="text-decoration:none;">Projects</a></li>
+                        <li><a href="/assets/pages/skills.html" class="text-light" style="text-decoration:none;">Skills</a></li>
+                        <li><a href="/assets/pages/contact.html" class="text-light" style="text-decoration:none;">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 style="color:#fff;">Contact Info</h5>
+                    <p style="color:#e0e0e0; margin-bottom:5px;">Mail id: sdash9692@gmail.com</p>
+                    <p style="color:#e0e0e0; margin-bottom:5px;">Contact no: 8338092612</p>
+                    <p style="color:#e0e0e0;">Location: Jajpur, Odisha</p>
+                </div>
+
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="d-flex justify-content-center gap-3 mb-3">
+                <a href="https://github.com/amchandan" target="_blank"
+                    class="text-light d-flex align-items-center justify-content-center rounded-circle"
+                    style="width:45px;height:45px;font-size:1.4rem;border:1px solid #fff;transition:0.3s;"
+                    onmouseover="this.style.backgroundColor='#333'; this.style.transform='scale(1.2)';"
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.transform='scale(1)';">
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/%C3%A7h%C3%A3nd%C3%A1n-%C3%B9-das-d%C3%A3sh-5a8062329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"
+                    class="text-light d-flex align-items-center justify-content-center rounded-circle"
+                    style="width:45px;height:45px;font-size:1.4rem;border:1px solid #fff;transition:0.3s;"
+                    onmouseover="this.style.backgroundColor='#0077b5'; this.style.transform='scale(1.2)';"
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.transform='scale(1)';">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="mailto:sdash9692@gmail.com"
+                    class="text-light d-flex align-items-center justify-content-center rounded-circle"
+                    style="width:45px;height:45px;font-size:1.4rem;border:1px solid #fff;transition:0.3s;"
+                    onmouseover="this.style.backgroundColor='#d44638'; this.style.transform='scale(1.2)';"
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.transform='scale(1)';">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+
+                <a href="https://wa.me/918338092612" target="_blank"
+                    class="text-light d-flex align-items-center justify-content-center rounded-circle"
+                    style="width:45px;height:45px;font-size:1.4rem;border:1px solid #fff;transition:0.3s;"
+                    onmouseover="this.style.backgroundColor='#25d366'; this.style.transform='scale(1.2)';"
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.transform='scale(1)';">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+
+            <!-- Footer Bottom Text -->
+            <div class="text-center" style="color:#cce5ff;">
+                © 2025 Chandan dash All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
+    <script src="/assets/js/contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chandan udas dash - MERN Stack Developer </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar html start  -->
+    <nav id="navbar">
+        <a href="/index.html" class="logo">
+            <img src="/assets/images/myportfolio.png" alt="My Portfolio Logo" class="logo-img">
+        </a>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <div class="nav-links" id="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/assets/pages/about.html">About</a>
+            <a href="/assets/pages/project.html">Project</a>
+            <a href="/assets/pages/skills.html">Skills</a>
+            <a href="/assets/pages/contact.html">Contact</a>
+        </div>
+    </nav>
+
+
+
+<!-- Gift Popup Modal -->
+    <div class="modal fade" id="giftModal" tabindex="-1" aria-labelledby="giftModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content gift-modal">
+
+                <!-- Close Button -->
+                <button type="button" class="btn-close ms-auto mt-2 me-2 gift-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+                <div class="modal-body text-center">
+                    <img src="assets/images/gift/happynewyear.gif" alt="Christmas Gift Animation"
+                        class="img-fluid rounded gift-img">
+
+                    <h4 class="mt-3 gift-title">🎄 Merry Christmas & Happy New Year 🎉</h4>
+                    <h4 class="mt-2 gift-year">2026 from 𝑪𝒉𝒂𝒏𝒅𝒂𝒏 𝑼𝒅𝒂𝒔 𝑫𝒂𝒔𝒉</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Custom Styles -->
+    <style>
+        .gift-modal {
+            background: #0f172a;
+            /* matches your website */
+            border: 1px solid rgba(180, 120, 255, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 18px;
+        }
+
+        .gift-title,
+        .gift-year {
+            color: #d9caff;
+            /* your website text color */
+            font-family: "Poppins", sans-serif;
+        }
+
+        .gift-title {
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+
+        .gift-year {
+            font-weight: 500;
+            opacity: 0.8;
+        }
+
+        .gift-close {
+            filter: invert(90%);
+        }
+
+        .gift-img {
+            border-radius: 10px;
+            border: 1px solid rgba(180, 120, 255, 0.3);
+        }
+    </style>
+
+
+    <script>
+        window.onload = function () {
+            const myModal = new bootstrap.Modal(document.getElementById('giftModal'));
+            myModal.show();
+        };
+    </script>
+    <!-- gift  code close here it's only for temporary -->
+
+
+    <!-- hero content html start  -->
+    <!-- ===== HOME SECTION ===== -->
+    <section id="home" class="d-flex align-items-center justify-content-center text-center py-5"
+        style="min-height:95vh; background:#0f172a; color:#fff;">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-7 text-lg-start text-center mt-5">
+                    <h5 style="color:#38BDF8; letter-spacing:2px;">👋 Hi, I'm</h5>
+                    <h1 class="fw-bold display-5 mt-2" style="color:#E2E8F0;">𝑪𝒉𝒂𝒏𝒅𝒂𝒏 𝑼𝒅𝒂𝒔 𝑫𝒂𝒔𝒉</h1>
+                    <h3 class="fw-semibold mb-3" style="color:#38BDF8;">A Passionate Web Developer & Designer</h3>
+
+                    <p class="lead text-secondary mb-4">
+                        I love creating beautiful, responsive, and interactive websites using
+                        <span style="color:#38BDF8;">HTML</span>,
+                        <span style="color:#38BDF8;">CSS</span>,
+                        <span style="color:#38BDF8;">Bootstrap</span>, and
+                        <span style="color:#38BDF8;">JavaScript</span>.
+                        My goal is to turn ideas into clean, creative digital experiences.
+                    </p>
+
+                    <a href="#projects" class="btn btn-outline-info btn-lg rounded-pill me-3">View My Work</a>
+                    <a href="#contact" class="btn btn-info btn-lg rounded-pill text-dark fw-semibold">Hire Me</a>
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="col-lg-5 text-center mt-5 mt-lg-0">
+                    <div class="profile-wrapper position-relative d-inline-block">
+                        <img src="assets/images/wp.jpeg" alt="Profile Photo" class="rounded-circle shadow-lg img-fluid"
+                            style="width:260px; height:260px; object-fit:cover; border:4px solid #38BDF8;">
+                        <div class="glow-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Do Section -->
+    <section id="skills" class="container py-5">
+        <h2 class="section-title text-center mb-5" style="color:#38BDF8; font-weight:700;">What I Do</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="skills-card text-center p-4 rounded-4">
+                    <i class="bi bi-code-slash"></i>
+                    <h5 class="mt-3 fw-semibold text-white">Frontend Development</h5>
+                    <p class="text-secondary">
+                        Creating responsive, user-friendly interfaces using HTML, CSS, Bootstrap , JavaScript , React &
+                        Next js.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="skills-card text-center p-4 rounded-4">
+                    <i class="bi bi-database"></i>
+                    <h5 class="mt-3 fw-semibold text-white">Backend Development</h5>
+                    <p class="text-secondary">
+                        Working with Node.js & databases to connect frontend with backend systems.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="skills-card text-center p-4 rounded-4">
+                    <i class="bi bi-laptop"></i>
+                    <h5 class="mt-3 fw-semibold text-white">Web Design</h5>
+                    <p class="text-secondary">
+                        Designing clean, minimal layouts with smooth UI & UX across all devices and screen sizes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="skills-card text-center p-4 rounded-4">
+                    <i class="bi bi-braces"></i>
+                    <h5 class="mt-3 fw-semibold text-white">Creative Coding</h5>
+                    <p class="text-secondary">
+                        Experimenting with animations, effects, and interactions for unique modern websites.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="skills-card text-center p-4 rounded-4">
+                    <i class="bi bi-lightbulb"></i>
+                    <h5 class="mt-3 fw-semibold text-white">Creative Ideas</h5>
+                    <p class="text-secondary">
+                        Turning ideas into elegant and functional web experiences with passion.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="skills-card text-center p-4 rounded-4">
+                    <i class="bi bi-infinity"></i>
+                    <h5 class="mt-3 fw-semibold text-white">Devops basics</h5>
+                    <p class="text-secondary">
+                        “Understanding DevOps basics with Git, GitHub, and CI/CD pipelines helps automate code delivery,
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Projects Section -->
+    <!-- ===== Featured Projects Section ===== -->
+    <section id="projects" class="container py-5">
+        <h2 class="section-title text-center mb-5" style="color:#38BDF8; font-weight:700;">
+            Featured Projects
+        </h2>
+
+        <div class="row g-4">
+            <!-- Project Card 1 -->
+            <div class="col-md-4">
+                <div class="project-card shadow-lg border-0 rounded-4 overflow-hidden">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/responsive img/modernportfolio.png" alt="Portfolio Project 1"
+                            class="project-img img-fluid">
+                    </div>
+                    <div class="p-4">
+                        <h5 class="project-title text-white">Portfolio Website</h5>
+                        <p class="project-desc text-secondary">
+                            A modern personal website built using HTML, CSS, bootstrap & javascript.
+                        </p>
+                        <a href="#" class="btn btn-outline-info btn-sm rounded-pill mt-2">Visit website</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="col-md-4">
+                <div class="project-card shadow-lg border-0 rounded-4 overflow-hidden">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/responsive img/responsive5.jpg" alt="Portfolio Project 3"
+                            class="project-img img-fluid">
+                    </div>
+                    <div class="p-4">
+                        <h5 class="project-title text-white">Responsive Web Design</h5>
+                        <p class="project-desc text-secondary">
+                            A fully responsive project using HTML, CSS (media query), and Bootstrap grid system.
+                        </p>
+                        <a href="#" class="btn btn-outline-info btn-sm rounded-pill mt-2">Visit website</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card  -->
+            <div class="col-md-4">
+                <div class="project-card shadow-lg border-0 rounded-4 overflow-hidden">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/responsive img/e-commerce2.jpg" alt="Portfolio Project 2"
+                            class="project-img img-fluid">
+                    </div>
+                    <div class="p-4">
+                        <h5 class="project-title text-white">E-commerce project </h5>
+                        <p class="project-desc text-secondary">
+                            “Shop smart. Shop fast. Your favorite products—delivered with one click.”
+                        </p>
+                        <a href="#" class="btn btn-outline-info btn-sm rounded-pill mt-2">Visit website</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- ================= MODERN FOOTER WITH GRID ================= -->
+    <footer class="text-light py-5" style="background-color:#041124;">
+        <div class="container">
+
+            <!-- Grid Layout for Footer Blocks -->
+            <div class="row text-center text-md-start mb-4">
+
+                <!-- About Me -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 style="color:#fff;">About Me</h5>
+                    <p style="color:#e0e0e0;">
+                        I’m Chandan u das Dash, a passionate web developer building modern, responsive, and interactive
+                        web applications. Connect with me via social media or email!
+                    </p>
+                </div>
+
+                <!-- Navbar Menu -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 style="color:#fff;">Quick Links</h5>
+                    <ul class="list-unstyled" style="line-height:2;">
+                        <li><a href="/index.html" class="text-light" style="text-decoration:none;">Home</a></li>
+                        <li><a href="/assets/pages/about.html" class="text-light" style="text-decoration:none;">About</a></li>
+                        <li><a href="/assets/pages/project.html" class="text-light" style="text-decoration:none;">Projects</a></li>
+                        <li><a href="/assets/pages/skills.html" class="text-light" style="text-decoration:none;">Skills</a></li>
+                        <li><a href="/assets/pages/contact.html" class="text-light" style="text-decoration:none;">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 style="color:#fff;">Contact Info</h5>
+                    <p style="color:#e0e0e0; margin-bottom:5px;">Mail id: sdash9692@gmail.com</p>
+                    <p style="color:#e0e0e0; margin-bottom:5px;">Contact no: 8338092612</p>
+                    <p style="color:#e0e0e0;">Location: Jajpur, Odisha</p>
+                </div>
+
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="d-flex justify-content-center gap-3 mb-3">
+                <a href="https://github.com/amchandan" target="_blank"
+                    class="text-light d-flex align-items-center justify-content-center rounded-circle"
+                    style="width:45px;height:45px;font-size:1.4rem;border:1px solid #fff;transition:0.3s;"
+                    onmouseover="this.style.backgroundColor='#333'; this.style.transform='scale(1.2)';"
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.transform='scale(1)';">
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/%C3%A7h%C3%A3nd%C3%A1n-%C3%B9-das-d%C3%A3sh-5a8062329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"
+                    class="text-light d-flex align-items-center justify-content-center rounded-circle"
+                    style="width:45px;height:45px;font-size:1.4rem;border:1px solid #fff;transition:0.3s;"
+                    onmouseover="this.style.backgroundColor='#0077b5'; this.style.transform='scale(1.2)';"
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.transform='scale(1)';">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="mailto:sdash9692@gmail.com"
+                    class="text-light d-flex align-items-center justify-content-center rounded-circle"
+                    style="width:45px;height:45px;font-size:1.4rem;border:1px solid #fff;transition:0.3s;"
+                    onmouseover="this.style.backgroundColor='#d44638'; this.style.transform='scale(1.2)';"
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.transform='scale(1)';">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+
+                <a href="https://wa.me/918338092612" target="_blank"
+                    class="text-light d-flex align-items-center justify-content-center rounded-circle"
+                    style="width:45px;height:45px;font-size:1.4rem;border:1px solid #fff;transition:0.3s;"
+                    onmouseover="this.style.backgroundColor='#25d366'; this.style.transform='scale(1.2)';"
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.transform='scale(1)';">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+
+            <!-- Footer Bottom Text -->
+            <div class="text-center" style="color:#cce5ff;">
+                © 2025 Chandan dash All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

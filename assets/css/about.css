@@ -1,0 +1,225 @@
+/* ================= ABOUT PAGE CUSTOM STYLES ONLY ================= */
+
+/* ================= HERO / INTRO ================= */
+#home {
+  background: radial-gradient(circle at top left, #0f172a 0%, #1e293b 100%);
+}
+
+.profile-wrapper {
+  position: relative;
+}
+
+.glow-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 200px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.2) 0%, transparent 70%);
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Buttons */
+.btn-outline-info {
+  border-color: #38bdf8;
+  color: #38bdf8;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-outline-info:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.btn-info {
+  background-color: #38bdf8;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+
+@media(max-width:768px) {
+  #home {
+    text-align: center;
+    padding-top: 100px;
+  }
+}
+
+/* ================= HIGHLIGHTS ================= */
+.highlight-card {
+  background: #1e293b;
+  transition: 0.4s ease;
+  border-radius: 20px;
+  padding: 2rem;
+  color: #e2e8f0;
+}
+
+.highlight-card:hover {
+  transform: translateY(-10px);
+  background: #334155;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+/* ================= TIMELINE ================= */
+.timeline {
+  border-left: 3px solid #38bdf8;
+  padding-left: 25px;
+}
+
+/* ================= TECH BADGES ================= */
+.tech-badge {
+  background: #1e293b;
+  border: 1px solid #38bdf8;
+  color: #e2e8f0;
+  border-radius: 50px;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.tech-badge:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  transform: scale(1.1);
+}
+
+/* ================= SKILLS CARDS ================= */
+.skills-card {
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s ease;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+}
+
+.skills-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(56, 189, 248, 0.2);
+  border: 1px solid #38bdf8;
+}
+
+.skills-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skills-card:hover::before {
+  opacity: 1;
+}
+
+.skills-card i {
+  font-size: 40px;
+  color: #38bdf8;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skills-card:hover i {
+  color: #60a5fa;
+  transform: scale(1.2);
+}
+
+.skills-card h5 {
+  color: #e2e8f0;
+}
+
+.skills-card p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* ================= P TAGS ================= */
+.timeline p {
+  color: #94a3b8;
+}
+
+.timeline p:hover {
+  color: #38bdf8;
+}
+
+.highlight-card p {
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.highlight-card p:hover {
+  color: #60a5fa;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background-color: #041124;
+  color: #fff;
+  padding: 50px 20px 20px 20px;
+  text-align: center;
+}
+
+footer h5 {
+  transition: 0.3s;
+}
+
+footer h5:hover {
+  color: #38bdf8;
+}
+
+footer a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #38bdf8;
+}
+
+footer .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  font-size: 1.4rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+footer .social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px) {
+  .skills-card,
+  .highlight-card,
+  .timeline {
+    margin-bottom: 1rem;
+  }
+}
